@@ -1,0 +1,320 @@
+<head>
+    <title>PROFILE SETTINGS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style >
+        table {
+    width: 700px;
+  }
+  body{
+    margin-top:20px;
+    color: #1a202c;
+    text-align: left;
+    background-color: #e2e8f0;    
+}
+.main-body {
+    padding: 15px;
+}
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  #googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  
+  #footer {
+ position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;   /* Height of the footer */
+  background:#6cf;
+   min-width:1100px;
+}
+    </style>
+    <link href="StyleSettings.css" rel="stylesheet">
+    <script src="Password.js"></script>
+    <script src="ValidateNID.js"></script>
+    <script src="valPhone.js"></script>
+
+  </head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage">FCAI</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="STUDENT.html">HOME</a></li>
+          <li><a href="#band">Current Courses</a></li>
+          <li><a href="#tour">Grades</a></li>
+          <li><a href="#contact">Enrollment</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Profile.html">Profile</a></li>
+              <li><a href="Settings.html">Settings</a></li>
+              <!-----<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>-->
+                
+              <li><a>Logout</a></li> 
+            </ul>
+          </li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="main-breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="STUDENT.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Profile Settings</li>
+      </ol>
+    </nav>
+
+    <div class="row gutters-sm">
+      <div class="col-md-4 d-none d-md-block">
+        <div class="card">
+          <div class="card-body">
+            <nav class="nav flex-column nav-pills nav-gap-y-1">
+              <a href="#profile" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user mr-2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Profile Information
+              </a>
+              <br>
+              <a href="#security" data-toggle="tab" class="nav-item nav-link has-icon nav-link-faded">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield mr-2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>Security
+              </a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header border-bottom mb-3 d-flex d-md-none">
+            <ul class="nav nav-tabs card-header-tabs nav-gap-x-1" role="tablist">
+              <li class="nav-item">
+                <a href="#profile" data-toggle="tab" class="nav-link has-icon active"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="#security" data-toggle="tab" class="nav-link has-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body tab-content">
+            <div class="tab-pane active" id="profile">
+              <h6>YOUR PROFILE INFORMATION</h6>
+              <hr>
+              <form onsubmit ="return validateMyForm()" >
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input  readonly type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter your fullname" value="Mostafaaaa" style="background-color: whitesmoke;">
+                  <small id="fullNameHelp" class="form-text text-muted">Your name may appear around here where you are mentioned. You cann't change it.</small>
+                </div>
+                <div class="form-group">
+                  <label for="bio">GPA</label>
+                  <input  readonly type="number" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="GPA" value="4" style="background-color: whitesmoke;">
+                </div>
+                <div class="form-group">
+                  <label for="url">National ID</label>
+                  <input type="number" class="form-control" placeholder="NationalID" id="innum" value="30104212103333" readonly>
+                  <span id = "message5" style="color:red ;" > </span> 
+
+                </div>
+                <div class="form-group">
+                  <label for="location">Location</label>
+                  <input type="text" class="form-control" id="location" placeholder="Enter your location" value="Bay Area, San Francisco, CA">
+                </div>
+                <div class="form-group">
+                  <label for="location">BirthDate</label>
+                  <input type="date" class="form-control" id="location" placeholder="EnterYour Date" value="Bay Area, San Francisco, CA">
+                </div>
+                <div class="form-group">
+                  <label for="url">Change Phone Number</label>
+                  <input type="number" class="form-control" placeholder="Phone Number" value="http://benije.ke/pozzivkij" id="myform_phone">
+                  <span id = "message4" style="color:red ;" > </span> 
+                </div>
+                <div class="form-group small text-muted">
+                  All of the fields on this page are not optional.
+                </div>
+                <button type="submit" class="btn btn-primary">Update Profile</button>
+                <button type="reset" class="btn btn-light">Reset Changes</button>
+              </form>
+            </div>
+            
+            <div class="tab-pane" id="security">
+              <h6>SECURITY SETTINGS</h6>
+              <hr>
+              <form onsubmit ="return validateForm()">
+                <label class="d-block">Change Password</label>
+                <!--  OLD password -->
+                <input type = "password" id = "pswd" value = "" class="form-control" placeholder="Enter your Old Password"> 
+                
+                <span id = "message0" style="color:red ;" > </span> <br><br>
+                <!-- Create a new password -->
+                <input type = "password" id = "pswd1" value = "" class="form-control" placeholder="New Password"> 
+                <span id = "message1" style="color:red"> </span> <br><br>
+                
+                <input type = "password" id = "pswd2" value = "" class="form-control" placeholder="Confirm New Password"> 
+                <span id = "message2" style="color:red"> </span> <br><br>
+                
+                <!-- Click to verify valid password -->
+                <input type = "submit" value = "Submit" id="myButton" class="btn btn-primary" >
+                
+                <!-- Click to reset fields -->
+                <button type = "reset" value = "Reset" class="btn btn-primary" >Reset</button>
+                </form>
+              <hr>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
