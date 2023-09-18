@@ -1,0 +1,13 @@
+1) Open The Folder of the Project in VS Code.
+2) Open XAMPP and press Start apache and Mysql.
+3) open this Link on browser "http://localhost/phpmyadmin/index.php".
+4) Create New DataBase on PHPMYAdmin named "cairouni".
+5) Create New Terminal On Visual Studio Code.
+6) Write Commands in the Terminal:
+   - First write "php artisan migrate" To migrate the DataBase of Project to phpMyAdmin.
+   - Second write "php artisan serve" to giveYou the Local Link for the Website to 
+     go to it, take this link to the Browser, the Project will be opened.
+
+*Information: 
+ - we Develop the FrontEnd for the Project using BOOTSTRAP.
+ - we Develop the BackEnd for the Project using FrameWork PHP Laravel.
